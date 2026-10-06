@@ -45,4 +45,13 @@ app.get("/biodata/:id", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`Server jalan di http://localhost:${PORT}`));
+pool
+  .query("SELECT NOW()")
+  .then(() => {
+    console.log("Terhubung ke PostgreSQL, database:", process.env.DB_NAME);
+    app.listen(PORT, () => console.log(`Server jalan di http://localhost:${PORT}`));
+  })
+  .catch((err) => {
+    console.error("Gagal terhubung ke PostgreSQL:", err.message);
+    process.exit(1);
+  });
