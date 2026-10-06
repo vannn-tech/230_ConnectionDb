@@ -50,14 +50,12 @@ CREATE TABLE IF NOT EXISTS biodata (
 ## Screenshot hasil GET data
 
 ### 1. Hasil GET di browser
-![GET biodata di browser](<img width="1919" height="1030" alt="Screenshot 2026-10-06 102931" src="https://github.com/user-attachments/assets/a9e66f2b-9d89-45fd-b5f1-289ba7d87804" />
-)
+![GET biodata di browser](<img width="1919" height="1030" alt="Screenshot 2026-10-06 102931" src="https://github.com/user-attachments/assets/68419789-788e-4586-b90e-611def3e6f11" />)
 
 Mengakses `http://localhost:3000/biodata` di browser menampilkan data dari tabel `biodata` dalam format JSON, berisi `id`, `nama`, `nim`, dan `kelas`.
 
 ### 2. Hasil GET di Postman
-![GET biodata di Postman](<img width="1919" height="1025" alt="Screenshot 2026-10-06 103026" src="https://github.com/user-attachments/assets/0547667b-f97d-42ff-bdb1-07ba4a3c9106" />
-)
+![GET biodata di Postman](<img width="1919" height="1025" alt="Screenshot 2026-10-06 103026" src="https://github.com/user-attachments/assets/02fc977f-d3f1-452b-ac6b-23c840c8cfd1" />)
 
 Request **GET** ke `http://localhost:3000/biodata` di Postman menghasilkan status **200 OK** dengan isi JSON yang sama dengan data di PostgreSQL.
 
